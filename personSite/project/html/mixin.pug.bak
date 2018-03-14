@@ -1,0 +1,22 @@
+mixin navbar(barItems)
+  .navbar.navbar-default
+   .container-fluid
+      .navbar-header
+          a.navbar-brand(href=barItems.header.href) #{barItems.header.text}
+      div
+        ul.nav.navbar-nav
+           each item in barItems.items
+            - if(!item.dropdownmenuItems)
+               li
+                 a(href=item.href) #{item.text}
+            - else
+               li.dropdown
+                a.dropdown-toggle(href="#" data-toggle="dropdown") #{item.text}
+                    b.caret
+                ul.dropdown-menu
+                  each dropdownmenuItem in item.dropdownmemuItems
+                     - if(dropdownmenuItem.href == 'divider')
+                       li.divider
+                     - else
+                       li
+                         a(href=dropdownmenuItem.href) #{dropdownmenuItem.text}

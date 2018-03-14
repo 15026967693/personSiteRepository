@@ -1,0 +1,54 @@
+extends ./navbar.pug
+block content
+     #accordion
+        h1 Java
+        div
+           p
+              a(href=javahref).
+                                 &nbsp;&nbsp;Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，
+                                 因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，
+        h1 Groovy
+        div
+           p
+              a(href=groovyhref).
+                                 &nbsp;&nbsp;Groovy是用于Java虚拟机
+                                 的一种敏捷的动态语言，它是一种成熟的面向对象编程语言，既可以用于面向对象编程，又可以用作纯粹的脚本语言。
+                                 使用该种语言不必编写过多的代码，同时又具有闭包和动态语言中的其他特性。
+        h1 Scala
+        div
+           p
+              a(href=scalahref).
+                             &nbsp;&nbsp;Scala是一门多范式的编程语言，一种类似java的编程语言 ，
+                             设计初衷是实现可伸缩的语言、并集成面向对象编程和函数式编程的各种特性。
+        h1 Node
+        div
+           p
+              a(href=nodehref).
+                                &nbsp;&nbsp;Node.js是一个Javascript运行环境(runtime)，发布于2009年5月，由Ryan Dahl开发，
+                                实质是对Chrome V8引擎进行了封装。Node.js对一些特殊用例进行优化，提供替代的API，使得V8在非浏览器环境下运行得更好。
+                                V8引擎执行Javascript的速度非常快，性能非常好。
+        h1 GO
+        div
+           p
+              a(href=gohref).
+                                &nbsp;&nbsp;Go是一种新的语言，一种并发的、带垃圾回收的、快速编译的语言。它具有以下特点：
+                                 它可以在一台计算机上用几秒钟的时间编译一个大型的Go程序。Go为软件构造提供了一种模型，它使依赖分析更加容易，
+                                      且避免了大部分C风格include文件与库的开头。Go是静态类型的语言，它的类型系统没有层级。
+                                      因此用户不需要在定义类型之间的关系上花费时间，这样感觉起来比典型的面向对象语言更轻量级。
+                                       Go完全是垃圾回收型的语言，并为并发执行与通信提供了基本的支持。
+                                       按照其设计，Go打算为多核机器上系统软件的构造提供一种方法。
+        h1 MYSQL数据库
+        div
+           p
+              a(href=mysqlhref).
+                            &nbsp;&nbsp;MySQL是一个关系型数据库管理系统，由瑞典MySQL AB 公司开发，目前属于 Oracle 旗下产品。
+                            MySQL 是最流行的关系型数据库管理系统之一，在 WEB 应用方面，MySQL是最好的 RDBMS (Relational Database Management System，
+                            关系数据库管理系统) 应用软件。
+                            MySQL是一种关系数据库管理系统，关系数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。
+                            MySQL所使用的 SQL 语言是用于访问数据库的最常用标准化语言。MySQL 软件采用了双授权政策，分为社区版和商业版，由于其体积小、速度快、总体拥有成本低，
+                            尤其是开放源码这一特点，一般中小型网站的开发都选择 MySQL 作为网站数据库。
+        h1 我的项目
+        div
+           p
+              a(href=projecthref).
+                                 &nbsp;&nbsp;小项目。

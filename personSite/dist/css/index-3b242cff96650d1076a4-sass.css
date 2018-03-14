@@ -1,0 +1,38 @@
+.fullscreen {
+  width: 100px;
+  height: 100px; }
+
+body {
+  perspective: 600px;
+  transform-style: preserve3d;
+  perspective-origin: center center;
+  backface-visibility: hidden; }
+
+.picture-choose, .itembox img:hover, .itembox p.h1:hover {
+  transform: rotateX(60deg) rotateY(180deg);
+  transition: transform 2s; }
+
+.itembox img {
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 2s; }
+
+.itembox div.wrapperitem {
+  margin: 20px 10px 0;
+  border: 1px solid silver;
+  height: 330px; }
+
+.itembox p.h1 {
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 2s; }
+
+.itembox p:nth-of-type(2):hover {
+  color: black; }
+
+.picture {
+  padding: 5px;
+  margin: auto;
+  width: 100px;
+  height: 80px; }
+
+a:hover {
+  text-decoration: none; }

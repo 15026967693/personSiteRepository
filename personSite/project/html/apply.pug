@@ -1,0 +1,37 @@
+extends ./navbar.pug
+block content
+      .container
+           .row
+              p.h1.text-center.text-danger 招聘须知
+           .row
+              p.text-center
+                         |1.本人只是一名没有经验的人员，但是对技术有着追求以及热爱。
+                         br
+                         |2.您相信经验并不能决定所有的一切，并且对于本人有一定的兴趣。
+                         br
+                         |3.提交成功后我将收到包含您信息的邮件。
+           .row
+                         form(action="../groovyhtml/submit.html" method="post")
+                                .form-group
+                                     label(for="contact") 联系方式
+                                     span.hidden.text-danger.h4.pull-right#contactmsg 错误！联系方式不能为空
+                                     textarea.form-control#contact(name="contact")
+                                .row
+                                   .col-md-12
+                                          label(for="choosetime") 请选择面试时间
+                                          span.hidden.text-danger.h4.pull-right#timemsg 时间错误
+                                .row
+                                   .col-md-6
+                                          input.form-control#chooseTime(type="text" name="choosetime")
+                                   .col-md-1
+                                          input.form-control.text-center#hour(type="text" name="hour")
+                                   .col-md-1
+                                             label.h5.text-center 时&#12288;&#12288;：
+                                   .col-md-1
+                                          input.form-control.text-center#minute(type="text" name="minute")
+                                   .col-md-1
+                                             label.h5.text-center 分
+                                   .col-md-2
+                                          button.btn.btn-primary.btn-block 提交
+                         
+                         

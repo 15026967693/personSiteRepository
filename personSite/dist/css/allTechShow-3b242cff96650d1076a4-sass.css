@@ -1,0 +1,10 @@
+a:hover {
+  text-decoration: none; }
+
+.ui-widget-content a {
+  color: gray; }
+  .ui-widget-content a:hover {
+    color: black; }
+
+#accordion {
+  margin: -20px 0 0 0; }

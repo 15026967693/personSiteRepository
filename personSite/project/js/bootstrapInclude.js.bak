@@ -1,0 +1,2 @@
+require('bootstrap')
+require('../lib/bootstrap/bootstrap-theme/css/bootstrap.min.css')

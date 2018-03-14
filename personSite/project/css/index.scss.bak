@@ -1,0 +1,73 @@
+$env:"a";
+.fullscreen
+{
+   width:100px;
+   height:100px;
+}
+body
+{
+ perspective:600px;
+ transform-style:preserve3d;
+ perspective-origin:center center;
+ backface-visibility:hidden;
+}
+.picture-choose
+{
+    transform:rotateX(60deg) rotateY(180deg);
+    transition: transform 2s;
+}
+.itembox
+{
+ img
+  {
+  transform:rotateX(0deg) rotateY(0deg);
+  transition: transform 2s;
+  //图片悬停
+   &:hover
+   {
+     @extend .picture-choose;
+   }
+  }
+  a{
+     margin:20px 10px 0;
+     border:1px solid silver;
+     height:330px;
+  }
+    p.h1
+  {
+    transform:rotateX(0deg) rotateY(0deg);
+    transition: transform 2s;
+    &:hover
+   {
+     @extend .picture-choose;
+   }
+  }
+  p:nth-of-type(2)
+  {
+     &:hover
+     {
+       color:black;
+     }
+  }
+}
+.picture
+{
+  padding:5px;
+  margin:auto;
+  width:100px;
+  height:80px;
+}
+a
+{
+ &:hover
+ {
+  text-decoration:none;
+ }
+}
+@if($env == "development")
+{
+div
+{
+    border:1px solid red;
+}
+}

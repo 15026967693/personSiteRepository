@@ -1,0 +1,9 @@
+@import "./public.scss";
+a
+{
+color:blue;
+&:hover
+{
+  font-weight:bold;
+}
+}

@@ -1,0 +1,13 @@
+@import "public.scss";
+.ui-widget-content a
+{
+ color:gray;
+ &:hover
+ {
+   color:black;
+ }
+}
+#accordion
+{
+  margin:-20px 0 0 0;
+}
