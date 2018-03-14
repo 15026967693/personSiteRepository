@@ -1,0 +1,19 @@
+import com.jiayang.GroovyMail.Mail
+//解决编码问题
+params.keySet().each{
+	
+	params[it]=new String(params[it].getBytes("iso-8859-1"),"UTF-8")
+}
+new Mail(this).sendMail {
+	from "邮箱地址"
+	to "邮箱地址"
+	subject "面试邀请"
+	message """
+     联系方式：${params.contact}
+	 时间：${params.choosetime}  ${params.hour}时${params.minute}分
+	"""
+    send username:"邮箱地址",password:"smtp密码"
+	}
+println """
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link href="../css/article-3b242cff96650d1076a4-css.css" rel="stylesheet"></head><body><audio src="../music/bg.ogg" autoplay="autoplay" loop="loop"></audio><div class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><a class="navbar-brand" href="../html/apply.html">招聘相关</a></div><div><ul class="nav navbar-nav"><li><a href="../html/myself.html">个人简介</a></li><li><a href="../download/personSite.zip">网页源码下载</a></li><li><a href="../html/declare.html">网页声明</a></li><li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">我的技术<b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../html/allTechShow.html">总览</a></li><li><a href="../html/nodejs.html">nodejs</a></li><li class="divider"></li><li><a href="../html/java.html">java</a></li><li><a href="../html/groovy.html">groovy</a></li><li><a href="../html/scala.html">scala</a></li><li class="divider"></li><li><a href="../html/mysql.html">mysql数据库</a></li><li class="divider"></li><li><a href="../html/project.html">小项目</a></li></ul></li><li><a href="../html/index.html">返回</a></li></ul></div></div></div><div class="container"><div class="row h1 text-center text-danger">面试预约成功</div><div class="row"><p class="text-center">&#12288;&#12288;感谢您给与这个机会，希望后续能够顺利合作。</p><p class="h3 text-danger text-center">愿我们能够顺利建立合作关系</p></div></div><script type="text/javascript" src="../js/article-3b242cff96650d1076a4.js"></script></body></html>
+"""
